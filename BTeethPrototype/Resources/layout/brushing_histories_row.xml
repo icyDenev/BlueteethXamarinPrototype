@@ -1,0 +1,95 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#03a9fc"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/brushing_histories_row" >
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:paddingTop="5dp"
+         android:paddingLeft="5dp" >
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/bh_layout_date1"
+            android:text="22.02.2020"
+            android:layout_width="150dp"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/bh_layout_date2"
+            android:layout_below="@id/bh_layout_date1"
+            android:text="23:15"
+            android:layout_width="150dp"
+            android:textSize="16dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@id/bh_layout_date2"
+            android:id="@+id/bh_layout_time_txt"
+            android:layout_marginTop="15dp"
+            android:text="Brushing Time:"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_below="@id/bh_layout_time_txt"
+            android:id="@+id/bh_layout_time"
+            android:text="2:45"
+            android:layout_width="150dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_toRightOf="@id/bh_layout_date1"
+            android:id="@+id/bh_layout_pokr_txt"
+            android:text="Coverage:"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_toRightOf="@id/bh_layout_date1"
+            android:layout_below="@id/bh_layout_pokr_txt"
+            android:id="@+id/bh_layout_pokr"
+            android:text="76%"
+            android:textSize="25dp"
+            android:background="@drawable/circular_textview"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <TextView
+            android:layout_toRightOf="@id/bh_layout_pokr_txt"
+            android:id="@+id/bh_layout_dvij_txt"
+            android:text="Movements:"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="35dp"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_toRightOf="@id/bh_layout_pokr"
+            android:layout_below="@id/bh_layout_dvij_txt"
+            android:id="@+id/bh_layout_dvij"
+            android:text="69"
+            android:textSize="25dp"
+            android:background="@drawable/circular_textview"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginLeft="35dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+
+    </RelativeLayout>
+
+    <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#e2e2e2"
+    android:layout_marginTop="10dp"/>
+
+</LinearLayout>

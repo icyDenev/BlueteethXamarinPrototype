@@ -1,0 +1,165 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_dashboard"
+    android:padding="0dp"
+    android:layout_width="match_parent"
+    android:background="@color/colorBTBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/db_layout_hello_text"
+        android:layout_below="@id/toolbar"
+        android:text="Hello, "
+        android:fontFamily=""
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:padding="100dp"
+        android:layout_marginRight="-100.0dp"
+        android:layout_marginTop="-170dp"
+        android:layout_marginLeft="-100.0dp"
+        android:id="@+id/teeth">
+
+        <ImageView
+            android:id="@+id/db_layout_ul_img"
+            android:src="@drawable/ul"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120.0dp" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/db_layout_um_img"
+            android:src="@drawable/um"
+            android:layout_toRightOf="@id/db_layout_ul_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-55.0dp"
+            android:layout_marginRight="-64.0dp"
+            android:layout_marginTop="37.1dp" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/db_layout_ur_img"
+            android:src="@drawable/ur"
+            android:layout_toRightOf="@id/db_layout_um_img"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/db_layout_start_btn"
+            android:text="Start Brushing"
+            android:textSize="15dp"
+            android:background="@drawable/roundbutton"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="246.2dp"
+            android:layout_marginLeft="114.1dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id="@+id/db_layout_dl_img"
+            android:src="@drawable/dl"
+            android:layout_below="@id/db_layout_ul_img"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="0.0dp" >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/db_layout_dm_img"
+            android:src="@drawable/dm"
+            android:layout_toRightOf="@id/db_layout_dl_img"
+            android:layout_below="@id/db_layout_um_img"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-55.0dp"
+            android:layout_marginRight="-55.0dp"
+            android:layout_marginTop="268.0dp">
+        </ImageView>
+        <ImageView
+            android:id="@+id/db_layout_dr_img"
+            android:src="@drawable/dr"
+            android:layout_toRightOf="@id/db_layout_dm_img"
+            android:layout_below="@id/db_layout_ur_img"
+            android:layout_width="150dp"
+            android:layout_height="170dp" >
+        </ImageView>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/teeth"
+        android:layout_marginTop="-170dp">
+
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+            android:visibility="invisible"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:background="@drawable/circular_textview"
+                android:textColor="@android:color/white"
+                android:id="@+id/db_coverage"
+                android:layout_below="@id/teeth"
+                />
+
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+            android:visibility="invisible"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:background="@drawable/circular_textview"
+                android:textColor="@android:color/white"
+                android:id="@+id/db_movements"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@id/teeth"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/navigation"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            android:background="#0078DC"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="0.0dp" />
+    </LinearLayout>
+
+</RelativeLayout>

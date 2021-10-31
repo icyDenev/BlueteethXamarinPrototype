@@ -1,0 +1,103 @@
+﻿
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Effects="clr-namespace:BTeethPrototype.Adapter" 
+    android:orientation="vertical"
+    android:background="@color/colorBTBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/brushing_histories" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/bh_layout_date_txt"
+        android:layout_below="@id/toolbar"
+        android:text="Date and time of brushing: "
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bh_layout_date_txt"
+        android:gravity="center"
+        android:layout_marginTop="-40dp">
+
+        <TextView
+            android:id="@+id/bh_layout_time_txt"
+            android:text="Brushing time:\n2:47"
+            android:textSize="20dp"
+            android:background="@drawable/circular_textview"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="246.2dp"
+            android:layout_marginLeft="114.1dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id="@+id/bh_layout_ul_img"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp">
+        </ImageView> 
+
+        <ImageView
+            android:id="@+id/bh_layout_um_img"
+            android:layout_toRightOf="@id/bh_layout_ul_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-55.0dp"
+            android:layout_marginRight="-64.0dp"
+            android:layout_marginTop="37.1dp" >
+        </ImageView> 
+
+        <ImageView
+            android:id="@+id/bh_layout_ur_img"
+            android:layout_toRightOf="@id/bh_layout_um_img"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="120dp">
+        </ImageView> 
+
+        <ImageView
+            android:id="@+id/bh_layout_dl_img"
+            android:layout_below="@id/bh_layout_ul_img"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginRight="0.0dp"
+            android:layout_marginLeft="0.0dp" >
+        </ImageView> 
+
+        <ImageView
+            android:id="@+id/bh_layout_dm_img"
+            android:layout_toRightOf="@id/bh_layout_dl_img"
+            android:layout_below="@id/bh_layout_um_img"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="-55.0dp"
+            android:layout_marginRight="-55.0dp"
+            android:layout_marginTop="268.0dp">
+        </ImageView> 
+
+        <ImageView
+            android:id="@+id/bh_layout_dr_img"
+            android:layout_toRightOf="@id/bh_layout_dm_img"
+            android:layout_below="@id/bh_layout_ur_img"
+            android:layout_width="150dp"
+            android:layout_height="170dp">
+        </ImageView> 
+
+    </RelativeLayout>
+
+    </RelativeLayout>

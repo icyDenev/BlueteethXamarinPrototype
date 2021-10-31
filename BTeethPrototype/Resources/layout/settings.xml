@@ -1,0 +1,88 @@
+  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_dashboard"  
+    android:padding="0dp"  
+    android:layout_width="match_parent"
+    android:background="@color/colorBTBackground"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+        android:id="@+id/settings_layout_date_txt"
+        android:layout_below="@id/toolbar"
+        android:text="Hello!"
+        android:fontFamily=""
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="50dp"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="0dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:gravity="center"
+        android:padding="100dp"
+        android:layout_marginRight="-100.0dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginLeft="-100.0dp"
+        android:id="@+id/settings_main">
+
+        <Button
+            android:id="@+id/settings_layout_bt_device_btn"
+            android:text="Set a Bluetooth device"
+            android:textSize="15dp"
+            android:background="@drawable/roundbutton"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"/>
+
+        <Button
+            android:id="@+id/settings_layout_log_out_btn"
+            android:text="Log out"
+            android:layout_below="@id/settings_layout_bt_device_btn"
+            android:textSize="15dp"
+            android:background="@drawable/roundbutton"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="20.0dp"
+            android:layout_marginLeft="0.0dp"
+            android:layout_width="300dp"
+            android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@id/settings_main"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/settings_bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:menu="@menu/navigation"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            android:background="#0078DC"
+            android:layout_marginTop="0.0dp"
+            android:layout_marginBottom="0.0dp" />
+    </LinearLayout>
+
+</RelativeLayout>
