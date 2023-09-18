@@ -7,8 +7,6 @@ app, which connects via Bluetooth to the device, extracts the data, and converts
 useable, user-friendly graphics.
 
 ## 1. Used Technologies
-### Connection:
-- Bluetooth Low Energy (BLE)
 ### Programming Language:
 - C#
 - Arduino (based on C)
