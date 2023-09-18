@@ -119,6 +119,6 @@ found out that we had mixed px and dp as size units, which led to a complete mes
 it was not hard at all to fix that problem (we just switched all occurrences of px into dp and voila –
 it worked :D).
 
-3. Final Results
+## 3. Final Results
 We managed to create the Blueteeth prototype with a working mobile app and a physical module, 
 which records data and sends the information to the phone
